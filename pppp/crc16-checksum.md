@@ -65,6 +65,7 @@ Bingo! The message data, except `aabb` header, has a 16-bit CRC16/XMODEM checksu
 The following is a python proof-of-concept of calculating the checksum:
 
 ```python
+import struct
 import crcmod
 
 def ppcs_crc16(data):
