@@ -67,7 +67,7 @@ The following is a python proof-of-concept of calculating the checksum:
 ```python
 import crcmod
 
-def ppcs_crc16(self, data):
+def ppcs_crc16(data):
     crc16 = crcmod.mkCrcFun(0x11021, rev=False, initCrc=0x0000, xorOut=0x0000)
     return struct.pack("<H", crc16(data))
 ```
