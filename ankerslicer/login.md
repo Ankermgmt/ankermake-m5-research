@@ -8,21 +8,21 @@ Ankermake slicer stores your login information in an obfuscated format.
 
 The file to look for is
 
-```
-   %AppData%/Local/AnkerMake/AnkerMake_64bit_fp/login.json
+```shell
+%AppData%/Local/AnkerMake/AnkerMake_64bit_fp/login.json
 ```
 
 Which, even though it is named `.json`, is a base64-encoded, encrypted json file.
 
 This file can be decoded using a couple of unix commands. First, decode the base64:
 
-```
+```shell
 $ base64 -d login.json > login.raw
 ```
 
 Now `login.raw` will contain the raw (encrypted) contents. These can be decrypted using openssl:
 
-```
+```shell
 $ openssl aes-128-ecb -d -nopad -in login.raw -K 1b55f97793d58864571e1055838cac97
 ```
 
@@ -30,7 +30,7 @@ The key `1b55f97793d58864571e1055838cac97` was extracted from Ankermake Slicer u
 
 The `openssl` command above should yield output similar to this:
 
-```
+```json
 {
     "code": 0,
     "data": {
@@ -51,7 +51,7 @@ The `openssl` command above should yield output similar to this:
         "server_secret_info": {
             "public_key": "REDACTED"
         },
-        "token_expires_at": REDACTED,
+        "token_expires_at": "REDACTED",
         "trust_list": [
         ],
         "user_id": "REDACTED",
