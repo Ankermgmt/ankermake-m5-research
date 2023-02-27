@@ -21,6 +21,7 @@ the findings here. Learn more about:
  - The types of [MQTT message](mqtt/message-types.md) that the printer understands.
  - How to calculate the [specific type of crc16](pppp/crc16-checksum.md) used in the pppp protocol.
  - The [complicated file transfer protocol](pppp/file-transfer-protocol.md) used for sending print jobs.
+ - How to decode the [PPPP "initstring"](pppp/decode-initstring.py) used for initializing the pppp protocol.
 
 This repository is meant to document how the printer works, so don't expect any
 code here, except perhaps minor snippets for documentation purposes.
