@@ -15,7 +15,7 @@ More work is needed to determine the exact usage of each command type.
 | 1003  | 0x3eb | `ZZ_MQTT_CMD_NOZZLE_TEMP`            | Set nozzle temperature in units of 1/100th deg C (i.e.31337 is 313.37C)   | value=int                               |
 | 1004  | 0x3ec | `ZZ_MQTT_CMD_HOTBED_TEMP`            | Set hotbed temperature in units of 1/100th deg C (i.e. 1337 is 13.37C)    | value=int                               |
 | 1005  | 0x3ed | `ZZ_MQTT_CMD_FAN_SPEED`              | Set fan speed                                                             | value=?                                 |
-| 1006  | 0x3ee | `ZZ_MQTT_CMD_PRINT_SPEED`            |                                                                           | value=int                               |
+| 1006  | 0x3ee | `ZZ_MQTT_CMD_PRINT_SPEED`            | ? Set print speed                                                         | value=number                            |
 | 1007  | 0x3ef | `ZZ_MQTT_CMD_AUTO_LEVELING`          | (probably) Perform auto-levelling procedure                               | value=?                                 |
 | 1008  | 0x3f0 | `ZZ_MQTT_CMD_PRINT_CONTROL`          |                                                                           | value=?, userName=string, filePath=path |
 | 1009  | 0x3f1 | `ZZ_MQTT_CMD_FILE_LIST_REQUEST`      | Request on-board file list (`value == 1`) or usb file list (`value != 1`) | value=int                               |
