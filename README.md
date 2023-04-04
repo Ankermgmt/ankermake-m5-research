@@ -1,6 +1,8 @@
 Ankermake M5 Research
 =====================
 
+*Looking for software to use with Ankermake M5?* Please take a look at [ankermake-m5-protocol](https://github.com/Ankermgmt/ankermake-m5-protocol).
+
 Welcome! This repository contains research notes, reverse engineering work,
 protocol descriptions, etc, for the [Ankermake M5](https://www.ankermake.com/m5?ref=naviMenu) 3d printer.
 
