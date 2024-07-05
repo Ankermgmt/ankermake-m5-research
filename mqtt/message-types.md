@@ -48,6 +48,11 @@ More work is needed to determine the exact usage of each command type.
 | ....  | ....  | ....                                 | ....                                                                      | ....                                    |
 | 1049  | 0x419 | `ZZ_MQTT_CMD_SYSTEM_CHECK`           | ?                                                                         | value=?                                 |
 | 1050  | 0x41a | `ZZ_MQTT_CMD_AI_SWITCH`              | ?                                                                         | AISwitch=?, AIValue=?, AIPausePrint=?   |
+| 1051  | 0x41b | `ZZ_MQTT_CMD_AI_INFO_CHECK`          |                                                                           |                                         |
+| 1052  | 0x41c | `ZZ_MQTT_CMD_MODEL_LAYER`            |                                                                           | total_layer=int, real_print_layer=int   |
+| 1053  | 0x41d | `ZZ_MQTT_CMD_MODEL_DL_PROCESS`       |                                                                           |                                         |
+| ....  | ....  | ....                                 | ....                                                                      | ....                                    |
+| 1055  | 0x41f | `ZZ_MQTT_CMD_PRINT_MAX_SPEED`        |                                                                           |                                         |
 | ....  | ....  | ....                                 | ....                                                                      | ....                                    |
 | 2018  | 0x7e2 | `ZZ_STEST_CMD_GCODE_TRANSPOR`        | ?                                                                         | ?                                       |
 | ....  | ....  | ....                                 | ....                                                                      | ....                                    |
